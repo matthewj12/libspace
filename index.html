@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>LibSpace</title>
+</head>
+<body>
+	<div id="count"></div>
+
+	<script>
+		function updateClock() {
+			document.querySelector('#count').innerHTML = new Date() - new Date('2019-6-7');
+		}
+
+		updateClock();
+		setInterval(updateClock, 1);
+	</script>
+</body>
+
+</html>
