@@ -17,12 +17,12 @@
 
 	<script>
 		function updateClock() {
-			document.querySelector('#count').innerHTML = new Date() - new Date('2019-6-7');
+			cur_timestamp = new Date();
+			grad_timestamp = new Date('June 6, 2019 15:00:00');
+			document.querySelector('#count').innerHTML = cur_timestamp - grad_timestamp;
 		}
 
 		updateClock();
 		setInterval(updateClock, 1);
 	</script>
 </body>
-
-</html>
